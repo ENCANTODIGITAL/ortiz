@@ -1,0 +1,366 @@
+.hero-frase {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Playfair Display', serif;
+    
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.hero-frase h1{
+  font-size: 3rem;
+}
+
+
+#main-box {
+    background-color: #221f1f;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#image-container {
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#image-slider {
+    width: 95vw;
+    position: relative;
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slider-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* asegura que se vea completa */
+}
+/**/
+.slider-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: none;
+}
+
+
+/**/
+.slider-img {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider-text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 15px 20px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.slider-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.slider-text p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+#prev, #next {
+    font-size: 48px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+#slider-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #fcf8f8;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Estilos específicos para el slider 1 */
+.slider-img:first-child .slider-text {
+  background: rgba(0,0,0,0.65); /* fondo semitransparente más elegante */
+  padding: 25px 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.slider-img:first-child .slider-text h3 {
+  font-size: 2.5rem; /* título grande */
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #D4AF37; /* dorado premium */
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.slider-img:first-child .slider-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f4f4f4;
+  margin-bottom: 20px;
+}
+
+.slider-img:first-child .btn-cotiza {
+  display: inline-block;
+  background-color: #D4AF37;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.slider-img:first-child .btn-cotiza:hover {
+  background-color: #b38e2f;
+  transform: scale(1.08);
+}
+
+/* Ajustes responsive */
+@media (max-width: 600px) {
+  .slider-img:first-child .slider-text h3 {
+    font-size: 1.8rem;
+  }
+  .slider-img:first-child .slider-text p {
+    font-size: 1rem;
+  }
+  .slider-img:first-child .btn-cotiza {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+.footer {
+  background-color: #111;
+  color: #fffefe;
+  padding: 2rem;
+  text-align: center;
+  border-top: 3px solid #D4AF37; /* dorado */
+}
+
+.footer-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+s
+.footer-logo img {
+  max-width: 120px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-redes {
+  display: flex;
+  gap: 1rem;
+}
+
+.icono-red {
+  width: 32px;   /* tamaño pequeño */
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.icono-red:hover {
+  transform: scale(1.1); /* efecto hover */
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline; /* 🔑 asegura que todos los links se alineen por la base del texto */
+}
+
+.footer-links a {
+  color: #D4AF37;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;     /* 🔑 fuerza ícono + texto en línea */
+  align-items: baseline;    /* 🔑 mantiene texto a la par de la imagen */
+  gap: 0.5rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.icono-libro {
+  height: 80px; /* tamaño grande */
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.footer-ruc {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.btn-cotiza {
+  display: inline-block;
+  background-color: #D4AF37; /* dorado */
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-cotiza:hover {
+  background-color: #b38e2f; /* dorado más oscuro */
+  transform: scale(1.05);
+}
+
+/* 📱 Ajustes para móviles */
+@media (max-width: 600px) {
+  .btn-cotiza {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/*masias/
+
+
+/* Ajustes para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+  .hero-frase h1 {
+    font-size: 2rem; /* más pequeño en móviles */
+  }
+
+  .footer-logo img {
+    max-width: 90px; /* logo más compacto */
+  }
+
+  .icono-libro {
+    height: 60px; /* reduce tamaño del libro */
+  }
+}
+
+/* Ajustes para pantallas grandes (PC) */
+@media (min-width: 1024px) {
+  .hero-frase h1 {
+    font-size: 3.5rem; /* más grande en desktop */
+  }
+
+  .footer-logo img {
+    max-width: 150px; /* logo más grande */
+  }
+
+  .icono-libro {
+    height: 100px; /* libro más grande */
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  #image-container {
+    height: auto; /* deja que se ajuste al contenido */
+    padding: 10px 0;
+  }
+
+  .slider-img {
+    height: auto; /* no forzar alto fijo */
+  }
+
+  .slider-img img {
+    width: 100%;
+    height: auto; /* mantiene proporción */
+  }
+}
+/* Ajustes específicos para slider 1 en móviles */
+@media (max-width: 600px) {
+  .slider-img:first-child .slider-text {
+    background: rgba(0,0,0,0.7);
+    padding: 18px 15px;
+    border-radius: 10px;
+    max-width: 95%;
+    bottom: 5%; /* sube un poco el bloque */
+  }
+
+  .slider-img:first-child .slider-text h3 {
+    font-size: 1.6rem; /* más compacto */
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .slider-img:first-child .slider-text p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .slider-img:first-child .btn-cotiza {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+  }
+}
