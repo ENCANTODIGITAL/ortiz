@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtesanoWebb</title>
+    <link rel="stylesheet" href="masias.css">
+    <!-- Favicon para navegadores y buscadores -->
+    <link rel="icon" href="https://logotipodigital-removebg-preview(2).ico" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://logotipodigital-removebg-preview(3).ico" sizes="48x48" type="image/png">
+    <!--carrusel-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+
+    
+</head>
+<body>
+<!--section ajustar si quiere ser encabezado-->
+       <section class="hero-frase">
+        <div class="footer-logo">
+      <img src="https://oiperu.com/wp-content/uploads/2025/06/logo-ortiz-inmobiliria.svg" alt="Logo de la empresa">
+      
+        <h1>"ORTIZ INMOBILIARIA"</h1>
+    </section>
+  
+
+          <!-- Sección emocional destacada -->
+
+<!-- Encabezado emocional para Libro de Reclamaciones -->
+<section class="claims-intro">
+  <div class="claims-intro__container">
+    <!-- Hero con imagen y mensaje -->
+    <div class="claims-hero">
+      <div class="claims-hero__image">
+        <img src="FOTOS/atencionfemenina.png"Atención al cliente con empatía y profesionalismo">
+      </div>
+      <div class="claims-hero__content">
+        <h1 class="claims-title">Libro de Reclamaciones</h1>
+        <p class="claims-subtitle">Tu voz importa. Este espacio está diseñado para escucharte y mejorar continuamente.</p>
+
+        <div class="claims-badge">
+          <!-- Ícono balanza en SVG para reforzar transparencia -->
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3a1 1 0 011 1v2h2a1 1 0 110 2h-2v2h-2V8H9a1 1 0 110-2h2V4a1 1 0 011-1zm8.4 7.2l-3.1-5a1 1 0 00-1.7 0l-3.1 5a1 1 0 00.9 1.5h6.2a1 1 0 00.8-1.5zM21 13c0 2.2-2.2 4-5 4s-5-1.8-5-4M3.6 10.2l3.1-5a1 1 0 011.7 0l3.1 5a1 1 0 01-.9 1.5H4.4a1 1 0 01-.8-1.5zM3 13c0 2.2 2.2 4 5 4s5-1.8 5-4M12 19a1 1 0 011 1v1h4a1 1 0 110 2H7a1 1 0 110-2h4v-1a1 1 0 011-1z" fill="currentColor"/>
+          </svg>
+          <span>Comprometidos contigo · Ley N.º 29571</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Separador elegante -->
+    <div class="divider" role="separator" aria-hidden="true">
+      <span class="divider__line"></span>
+      <span class="divider__dot"></span>
+      <span class="divider__line"></span>
+    </div>
+
+    <!-- Microsección educativa -->
+    <div class="claims-edu">
+      <div class="claims-edu__item">
+        <h3>¿Qué es?</h3>
+        <p>Es el mecanismo oficial para expresar tu disconformidad o sugerencia respecto a un producto o servicio.</p>
+      </div>
+      <div class="claims-edu__item">
+        <h3>¿Para qué sirve?</h3>
+        <p>Nos permite registrar, analizar y responder tus reclamos con transparencia, convirtiendo cada caso en mejora real.</p>
+      </div>
+      <div class="claims-edu__item">
+        <h3>¿Cómo lo gestionamos?</h3>
+        <p>Recibimos tu solicitud, confirmamos la recepción y te respondemos dentro de los plazos establecidos por la normativa.</p>
+      </div>
+    </div>
+
+    <!-- Bloque de confianza con imagen secundaria -->
+    <div class="claims-commit">
+      <div class="claims-commit__media">
+        <img src="FOTOS/balanza.png" alt="Compromiso y confianza en la atención al consumidor">
+      </div>
+      <div class="claims-commit__text">
+        <p class="lead">Transparencia y respeto al consumidor</p>
+        <p>En ARTESANOWEBB creemos en relaciones claras, justas y humanas. Este Libro de Reclamaciones está disponible conforme al Código de Protección y Defensa del Consumidor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="libro-reclamaciones">
+  <h2>Libro de Reclamaciones (Ley 29571)</h2>
+  <p>Conforme al Código de Protección y Defensa del Consumidor, este establecimiento cuenta con un Libro de Reclamaciones a su disposición.</p>
+  <form class="form-contacto" id="form-contacto" 
+      action="https://formsubmit.co/artesanowebb@gmail.com" 
+      method="POST" 
+      onsubmit="return validarFormulario()">
+
+  <fieldset>
+    <legend>Datos Personales</legend>
+    <label>DNI:</label>
+    <input type="text" id="dni" name="dni" required maxlength="8" inputmode="numeric" title="Ingrese solo 8 números">
+    <span class="error-msg"></span>
+
+    <label>Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required maxlength="40">
+    <span class="error-msg"></span>
+
+    <label>Apellido paterno:</label>
+    <input type="text" id="apellido-paterno" name="apellido_paterno" required maxlength="40">
+    <span class="error-msg"></span>
+
+    <label>Apellido materno:</label>
+    <input type="text" id="apellido-materno" name="apellido_materno" required maxlength="40">
+    <span class="error-msg"></span>
+  </fieldset>
+
+  <fieldset>
+    <legend>Datos para el envío de respuesta</legend>
+    <label>Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span class="error-msg"></span>
+
+    <label>Teléfono fijo:</label>
+    <input type="tel" id="fijo" name="fijo" maxlength="7">
+    <span class="error-msg"></span>
+
+    <label>Celular:</label>
+    <input type="tel" id="celular" name="celular" required maxlength="9">
+    <span class="error-msg"></span>
+
+    <label>Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required maxlength="80">
+    <span class="error-msg"></span>
+  </fieldset>
+
+  <fieldset>
+    <legend>Detalle de la queja o reclamo</legend>
+    <label>Tienda donde fue atendido:</label>
+    <select id="tienda" name="tienda" required>
+      <option>Página web</option>
+    </select>
+    <span class="error-msg"></span>
+
+    <label>Monto del reclamo (S/.):</label>
+    <input type="text" id="monto" name="monto" maxlength="8">
+    <span class="error-msg"></span>
+
+    <label>Tema:</label>
+    <input type="text" id="tema" name="tema" required maxlength="100">
+    <span class="error-msg"></span>
+
+    <label>Descripción del producto adquirido:</label>
+    <textarea id="descripcion" name="descripcion" rows="2" maxlength="600"></textarea>
+    <span class="error-msg"></span>
+
+    <label>Detalle de tu reclamo:</label>
+    <textarea id="detalle" name="detalle" rows="3" maxlength="5000"></textarea>
+    <span class="error-msg"></span>
+
+    <label>Pedido:</label>
+    <textarea id="pedido" name="pedido" rows="2" maxlength="5000"></textarea>
+    <span class="error-msg"></span>
+  </fieldset>
+
+  <div class="aceptacion">
+    <input type="checkbox" name="acepto" required>
+    He leído y acepto la <a href="#" id="abrir-modal">Política de privacidad</a>.
+  </div>
+
+  <input type="hidden" name="_captcha" value="false">
+  <button type="submit">ENVIAR</button>
+</form>
+</section>
+<!--modal oculto-->
+   <div id="modal-privacidad" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar-modal" id="cerrar-modal">&times;</span>
+    <section class="politica-privacidad">
+      <h2>🔒 Política de Privacidad – ARTESANOWEBB</h2>
+
+      <p><strong>NOMBRE COMERCIAL:</strong> ARTESANOWEBB</p>
+      <!-- <p><strong>RUC:</strong> [Pendiente de registro]</p> -->
+      <p><strong>Sitio web:</strong> 
+        <a href="https://artesanowebb.com" target="_blank" rel="noopener">artesanowebb.com</a>
+      </p>
+      <p><strong>Contacto:</strong> WhatsApp y sección de reclamaciones o contacto en la web.</p>
+
+      <h3>1. Introducción</h3>
+      <p>ARTESANOWEBB respeta la privacidad de sus clientes y usuarios. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos la información personal que nos proporcionan al contratar nuestros servicios o interactuar con nuestro sitio web.</p>
+
+      <h3>2. Información que recopilamos</h3>
+      <ul>
+        <li><strong>Datos de contacto:</strong> nombre, correo electrónico, número de teléfono, dirección digital.</li>
+        <li><strong>Información comercial:</strong> nombre de empresa, RUC, datos de facturación.</li>
+        <li><strong>Contenidos del proyecto:</strong> textos, imágenes, logos proporcionados por el cliente.</li>
+        <li><strong>Datos técnicos de navegación:</strong> cookies, IP, tipo de navegador y páginas visitadas.</li>
+      </ul>
+
+      <h3>3. Uso de la información</h3>
+      <ul>
+        <li><strong>Gestión de servicios:</strong> contratación, desarrollo y entrega de proyectos.</li>
+        <li><strong>Facturación:</strong> emisión de comprobantes conforme a SUNAT.</li>
+        <li><strong>Comunicación:</strong> avances, incidencias y renovaciones.</li>
+        <li><strong>Cumplimiento legal:</strong> obligaciones regulatorias aplicables.</li>
+      </ul>
+
+      <h3>4. Protección de datos</h3>
+      <p>Adoptamos medidas técnicas y organizativas razonables para proteger la información contra accesos no autorizados, pérdida o alteración. Los datos se almacenan en servidores seguros y solo son accesibles por personal autorizado.</p>
+
+      <h3>5. Compartición de información</h3>
+      <ul>
+        <li><strong>Sin divulgación a terceros:</strong> no compartimos datos personales sin autorización expresa del cliente.</li>
+        <li><strong>Excepciones legales:</strong> cuando la ley lo requiera o el cliente solicite la publicación de información (por ejemplo, datos visibles en su sitio web).</li>
+      </ul>
+
+      <h3>6. Derechos del cliente</h3>
+      <p>El cliente puede ejercer sus derechos de acceso, rectificación, cancelación y oposición (ARCO). Las solicitudes se pueden realizar vía WhatsApp o a través de la sección de contacto en artesanowebb.com.</p>
+
+      <h3>7. Cookies y navegación</h3>
+      <p>Nuestro sitio puede utilizar cookies para mejorar la experiencia del usuario. El cliente puede configurar su navegador para rechazarlas, aunque esto podría limitar algunas funcionalidades.</p>
+
+      <h3>8. Vigencia y modificaciones</h3>
+      <p>ARTESANOWEBB puede actualizar esta Política de Privacidad por cambios legales o mejoras del servicio. Las modificaciones serán publicadas en nuestro sitio y notificadas a los clientes cuando corresponda.</p>
+
+      <h3>9. Legislación aplicable</h3>
+      <p>Esta Política se rige por las leyes de la República del Perú, incluyendo la Ley N.º 29733 – Ley de Protección de Datos Personales y su reglamento.</p>
+    </section>
+  </div>
+</div>
+<!-- Modal de confirmación -->
+<div id="modal-exito" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModalExito()">&times;</span>
+    <h3>✅ Mensaje enviado</h3>
+    <p>Muchas gracias. Nuestros asesores se comunicarán contigo pronto.</p>
+  </div>
+</div>
+
+<script>
+document.getElementById("form-contacto").addEventListener("submit", function(e){
+  e.preventDefault();
+  fetch(this.action, {
+    method: "POST",
+    body: new FormData(this)
+  }).then(response => {
+    if(response.ok){
+      document.getElementById("modal-exito").style.display = "block";
+      this.reset();
+    } else {
+      alert("Hubo un problema al enviar el formulario.");
+    }
+  }).catch(error => {
+    alert("Error de conexión. Intenta más tarde.");
+  });
+});
+
+function cerrarModalExito(){
+  document.getElementById("modal-exito").style.display = "none";
+}
+</script>
+
+
+<!-- Enlace al JS -->
+<script src="libroreclamo.js"></script>
+
+     <footer class="footer">
+  <div class="footer-contenido">
+    <!-- Logo y dirección web -->
+    <div class="footer-logo">
+      <img src="https://oiperu.com/wp-content/uploads/2025/06/logo-ortiz-inmobiliria.svg" alt="Logo de la empresa">
+      <p>WWW.Artesanowebb.com</p>
+    </div>
+
+    <!-- Redes sociales con íconos -->
+    <div class="footer-redes">
+      <a href="https://facebook.com/tuempresa" target="_blank">
+        <img src="FOTOS/Logo_de_Facebook.png" alt="Facebook" class="icono-red">
+      </a>
+      <a href="https://instagram.com/tuempresa" target="_blank">
+        <img src="FOTOS/logoinstagram.png" alt="Instagram" class="icono-red">
+      </a>
+      <a href="https://tiktok.com/@tuempresa" target="_blank">
+        <img src="FOTOS/logotipo-redes-sociales-vector-tiktok_1093524-451.avif" alt="TikTok" class="icono-red">
+      </a>
+    </div>
+
+    <!-- Hipervínculos legales -->
+    <div class="footer-links">
+      <a href="terminosycondiciones.html">Términos y condiciones</a>
+      <a href="politicaprivacidad.html">Política de privacidad</a>
+      <a href="librodereclamaciones.html" class="libro-link">
+         <img src="FOTOS/libro-de-reclamaciones.jpg" alt="Libro de reclamaciones" class="icono-libro">
+        Libro de reclamaciones
+        
+        
+      </a>
+    </div>
+
+    <!-- RUC -->
+    <div class="footer-ruc">
+      <p>RUC: 12345678901</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
